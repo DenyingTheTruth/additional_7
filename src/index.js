@@ -1,5 +1,5 @@
 module.exports = function solveSudoku(matrix) {
-  
+
   let zeroLocation;
   let row = 0;
   let col = 0;
@@ -12,6 +12,7 @@ module.exports = function solveSudoku(matrix) {
     for (let j = 0; j < 9; j++)
       if (matrix[row][j] === number) return false;
 
+    
     row = Math.floor(row / 3) * 3;
     col = Math.floor(col / 3) * 3;
 
